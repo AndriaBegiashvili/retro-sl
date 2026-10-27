@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Retro SL • რეტრო კაბრიოლეტის ქირაობა | Mercedes 380SL ქორწილისთვის</title>
-<meta name="description" content="წითელი 1984 წლის Mercedes-Benz 380SL კაბრიოლეტი მძღოლით: ქორწილი, ფოტოსესია, კლიპი, დაბადების დღე. რეტრო მანქანის ქირაობა თბილისში და მთელ საქართველოში.">
+<meta name="description" content="წითელი 1984 წლის Mercedes-Benz 380SL კაბრიოლეტის ქირაობა: ქორწილი, ფოტოსესია, კლიპი, დაბადების დღე. რეტრო მანქანის ქირაობა თბილისში და მთელ საქართველოში.">
 <meta name="keywords" content="ქორწილის მანქანა, მანქანა ქორწილისთვის, რეტრო მანქანა, რეტრო მანქანის ქირაობა, კაბრიოლეტი, ფოტოსესია, qorwilis manqana, retro manqana, Mercedes 380SL, Tbilisi wedding car">
 <meta property="og:title" content="Retro SL • რეტრო კაბრიოლეტის ქირაობა">
 <meta property="og:description" content="1984 Mercedes-Benz 380SL კაბრიოლეტი ქორწილისთვის, ფოტოსესიისა და კლიპისთვის.">
@@ -82,11 +82,14 @@ html[data-lang="en"] [lang="ka"]{display:none!important}
 
 /* hero */
 .hero-type{padding-top:clamp(1.5rem,5vw,4rem)}
+.wordmark .ch{display:inline-block;will-change:transform}
+.wordmark .mask{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.06em}
 .wordmark{margin:0;font-weight:800;font-stretch:125%;line-height:.86;letter-spacing:-.02em;font-size:clamp(3.2rem,13.5vw,11.5rem);color:var(--red)}
 .hero-sub{display:grid;grid-template-columns:1fr auto;gap:1.5rem 3rem;align-items:end;margin:1.6rem 0 2rem}
 .hero-sub p{margin:0;max-width:34ch;font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.45;font-weight:500}
 .hero-cta{display:flex;gap:.7rem;flex-wrap:wrap}
-.hero-img{width:100%;height:clamp(340px,72vh,780px);object-fit:cover;object-position:42% 40%}
+.hero-media{overflow:hidden}
+.hero-img{will-change:transform;width:100%;height:clamp(340px,72vh,780px);object-fit:cover;object-position:42% 40%}
 
 /* intro + facts */
 .intro{display:grid;grid-template-columns:1.25fr 1fr;gap:3rem;padding:clamp(3rem,8vw,6rem) 0}
@@ -108,7 +111,8 @@ html[data-lang="ka"] .intro h2,html[data-lang="ka"] .section h2{font-size:clamp(
 
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(140px,18vw,230px);gap:.6rem}
-.gallery img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.gallery > div{overflow:hidden;border-radius:4px}
+.gallery img{width:100%;height:100%;object-fit:cover;will-change:transform}
 .g1{grid-column:span 4;grid-row:span 2}
 .g2{grid-column:span 2;grid-row:span 2}
 .g3{grid-column:span 2;grid-row:span 2}
@@ -185,7 +189,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     </div>
   </section>
 
-  <img class="hero-img" src="img/hero.webp" width="1600" height="1037" alt="პატარძალი თაიგულით წითელ Mercedes 380SL კაბრიოლეტში">
+  <div class="hero-media"><img class="hero-img" src="img/hero.webp" width="1600" height="1037" alt="პატარძალი თაიგულით წითელ Mercedes 380SL კაბრიოლეტში"></div>
 
   <section class="wrap intro">
     <div>
@@ -193,8 +197,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
         <span lang="ka">ღია სახურავი, ბეჟი ტყავი და 40 წლის ისტორია</span>
         <span lang="en">Top down, tan leather and forty years of style</span>
       </h2>
-      <p lang="ka">ჩვენი 380SL ქუჩაში ყველას ყურადღებას იპყრობს და ფოტოზე კიდევ უკეთ გამოიყურება. მანქანას ყოველთვის ჩვენი მძღოლი მართავს, ასე რომ თქვენ მხოლოდ დღით ტკბებით.</p>
-      <p lang="en">Our 380SL turns heads on the street and looks even better in photos. Our own driver is always behind the wheel, so all you have to do is enjoy the day.</p>
+      <p lang="ka">ჩვენი 380SL ქუჩაში ყველას ყურადღებას იპყრობს და ფოტოზე კიდევ უკეთ გამოიყურება. შეგიძლიათ მანქანა მთელი დღით იქირაოთ და თავად მართოთ, ან ფოტოსესიისთვის მანქანას ლოკაციაზე მოგიყვანთ და გადაღების შემდეგ უკან წავიყვანთ.</p>
+      <p lang="en">Our 380SL turns heads on the street and looks even better in photos. Rent it for the whole day and drive it yourself, or for photoshoots we bring the car to your location and take it back after the shoot.</p>
       <p lang="ka">ვმუშაობთ თბილისში და მთელ საქართველოში.</p>
       <p lang="en">Based in Tbilisi, available across Georgia.</p>
     </div>
@@ -204,7 +208,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
       <div><dt><span lang="ka">ძრავი</span><span lang="en">Engine</span></dt><dd>3.8 V8</dd></div>
       <div><dt><span lang="ka">ძარა</span><span lang="en">Body</span></dt><dd><span lang="ka">კაბრიოლეტი</span><span lang="en">Convertible</span></dd></div>
       <div><dt><span lang="ka">სალონი</span><span lang="en">Interior</span></dt><dd><span lang="ka">ბეჟი ტყავი</span><span lang="en">Tan leather</span></dd></div>
-      <div><dt><span lang="ka">მძღოლი</span><span lang="en">Driver</span></dt><dd><span lang="ka">შედის ფასში</span><span lang="en">Included</span></dd></div>
+      <div><dt><span lang="ka">ქირაობა</span><span lang="en">Rental</span></dt><dd><span lang="ka">მთელი დღით</span><span lang="en">Full day</span></dd></div>
+      <div><dt><span lang="ka">ფოტოსესია</span><span lang="en">Photoshoots</span></dt><dd><span lang="ka">მიწოდება ლოკაციაზე</span><span lang="en">Delivered to you</span></dd></div>
     </dl>
   </section>
 
@@ -214,13 +219,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
       <ul class="uses">
         <li>
           <h3><span lang="ka">ქორწილი</span><span lang="en">Weddings</span></h3>
-          <p lang="ka">პატარძლის მოყვანა, ფოტოები ლოკაციაზე და გასვლა რესტორნამდე. მანქანას ვრთავთ ლენტებითა და ყვავილებით.</p>
-          <p lang="en">Bride pickup, photos on location and the drive to the venue. We decorate the car with ribbons and flowers.</p>
+          <p lang="ka">მანქანა მთელი დღით თქვენია: პატარძლის მოყვანა, ფოტოები და გასვლა რესტორნამდე. მანქანას ვრთავთ ლენტებითა და ყვავილებით.</p>
+          <p lang="en">The car is yours for the whole day: bride pickup, photos and the drive to the venue. We decorate it with ribbons and flowers.</p>
         </li>
         <li>
           <h3><span lang="ka">ფოტოსესია</span><span lang="en">Photoshoots</span></h3>
-          <p lang="ka">მანქანა თქვენს ლოკაციაზე, საათობრივად. იდეალურია ნიშნობის, მოდისა და ბრენდის გადაღებებისთვის.</p>
-          <p lang="en">The car at your location, booked by the hour. Great for engagement, fashion and brand shoots.</p>
+          <p lang="ka">მანქანას თქვენს ლოკაციაზე მოგიყვანთ და გადაღების შემდეგ თავად წავიყვანთ. იდეალურია ნიშნობის, მოდისა და ბრენდის გადაღებებისთვის.</p>
+          <p lang="en">We bring the car to your location and take it back after the shoot. Great for engagement, fashion and brand shoots.</p>
         </li>
         <li>
           <h3><span lang="ka">კლიპი და რეკლამა</span><span lang="en">Music videos and ads</span></h3>
@@ -255,7 +260,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
         <li><p lang="ka">მოგვწერეთ თარიღი, დრო და ლოკაცია.</p><p lang="en">Send us the date, time and location.</p></li>
         <li><p lang="ka">შევთანხმდებით საათებსა და ფასზე.</p><p lang="en">We agree on the hours and the price.</p></li>
         <li><p lang="ka">ავანსი თქვენს თარიღს დაგიჯავშნით.</p><p lang="en">A deposit holds your date.</p></li>
-        <li><p lang="ka">დროულად ჩამოვდივართ სუფთა და მორთული მანქანით.</p><p lang="en">We arrive on time with the car clean and decorated.</p></li>
+        <li><p lang="ka">დათქმულ დროს მანქანას სუფთას გადმოგცემთ ან გადაღების ლოკაციაზე მოგიყვანთ.</p><p lang="en">At the agreed time, we hand over the clean car or bring it to your shoot.</p></li>
       </ol>
     </div>
   </section>
@@ -287,18 +292,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
 <script>
 // ===== Edit your contact details here =====
 const CONTACT = {
-  phone: "+995 5XX XX XX XX",          // shown on the page and used for calls
-  whatsapp: "9955XXXXXXXX",            // digits only, with 995 country code
-  facebook: "https://facebook.com/",   // your page link
-  instagram: "https://instagram.com/"  // your profile link
+  phone: "+995 579 77 94 39",          // shown on the page and used for calls
+  whatsapp: "995579779439",            // digits only, with 995 country code
+  facebook: "",   // your page link
+  instagram: ""  // your profile link
 };
 // ==========================================
 (function(){
   const digits = CONTACT.phone.replace(/[^\d+]/g,"");
   document.querySelectorAll(".js-tel").forEach(a=>{a.textContent=CONTACT.phone;a.href="tel:"+digits;});
   document.querySelectorAll(".js-wa").forEach(a=>{a.href="https://wa.me/"+CONTACT.whatsapp;a.target="_blank";a.rel="noopener";});
-  document.querySelectorAll(".js-fb").forEach(a=>{a.href=CONTACT.facebook;a.target="_blank";a.rel="noopener";});
-  document.querySelectorAll(".js-ig").forEach(a=>{a.href=CONTACT.instagram;a.target="_blank";a.rel="noopener";});
+  document.querySelectorAll(".js-fb").forEach(a=>{ if(!CONTACT.facebook){a.remove();return;} a.href=CONTACT.facebook;a.target="_blank";a.rel="noopener";});
+  document.querySelectorAll(".js-ig").forEach(a=>{ if(!CONTACT.instagram){a.remove();return;} a.href=CONTACT.instagram;a.target="_blank";a.rel="noopener";});
 
   document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{
     const id=a.getAttribute("href").slice(1); const t=document.getElementById(id);
@@ -314,6 +319,71 @@ const CONTACT = {
   btns.forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.set)));
   let saved=null; try{saved=localStorage.getItem("lang")}catch(e){}
   if(saved==="en"||saved==="ka") setLang(saved);
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  if(!window.gsap||!window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  // split the wordmark into letters (screen readers still read the full title)
+  const wm=document.querySelector(".wordmark");
+  const text=wm.textContent;
+  wm.setAttribute("aria-label",text);
+  wm.innerHTML='<span class="mask" aria-hidden="true">'+[...text].map(c=>c===" "?"&nbsp;":'<span class="ch">'+c+'</span>').join("")+'</span>';
+
+  const mm=gsap.matchMedia();
+  mm.add("(prefers-reduced-motion: no-preference)",()=>{
+    // page load: letters rise, then text and buttons, then the photo opens up
+    const tl=gsap.timeline({defaults:{ease:"power4.out"}});
+    tl.from(".wordmark .ch",{yPercent:110,duration:1.1,stagger:.06})
+      .from(".hero-sub p, .hero-cta .btn",{y:24,opacity:0,duration:.8,stagger:.1},"-=.6")
+      .from(".hero-media",{clipPath:"inset(12% 6% 0% 6%)",duration:1.4,ease:"expo.out"},"-=.7");
+
+    // hero photo slowly zooms out as you scroll past it
+    gsap.fromTo(".hero-img",{scale:1.18},{scale:1,ease:"none",
+      scrollTrigger:{trigger:".hero-media",start:"top bottom",end:"bottom top",scrub:true}});
+
+    // the big wordmark drifts up and fades as you leave the top
+    gsap.to(".wordmark",{yPercent:-25,opacity:.25,ease:"none",
+      scrollTrigger:{trigger:".hero-type",start:"top top",end:"bottom top",scrub:true}});
+
+    // headings and paragraphs slide in
+    gsap.utils.toArray(".intro h2, .section h2, .intro p").forEach(el=>{
+      gsap.from(el,{y:40,opacity:0,duration:1,ease:"power3.out",
+        scrollTrigger:{trigger:el,start:"top 88%"}});
+    });
+
+    // car facts appear row by row
+    gsap.from(".facts > div",{x:-30,opacity:0,duration:.7,stagger:.08,ease:"power3.out",
+      scrollTrigger:{trigger:".facts",start:"top 80%"}});
+
+    // uses list
+    gsap.from(".uses li",{y:40,opacity:0,duration:.8,stagger:.12,ease:"power3.out",
+      scrollTrigger:{trigger:".uses",start:"top 82%"}});
+
+    // gallery: frames open, photos move at their own speed
+    gsap.utils.toArray(".gallery > div").forEach((box,i)=>{
+      gsap.from(box,{clipPath:"inset(100% 0% 0% 0%)",duration:1.2,ease:"expo.out",delay:(i%2)*.12,
+        scrollTrigger:{trigger:box,start:"top 90%"}});
+      gsap.fromTo(box.querySelector("img"),{yPercent:-8,scale:1.15},{yPercent:8,scale:1.15,ease:"none",
+        scrollTrigger:{trigger:box,start:"top bottom",end:"bottom top",scrub:true}});
+    });
+
+    // steps: lines draw in one after another
+    gsap.from(".steps li",{y:30,opacity:0,duration:.8,stagger:.15,ease:"power3.out",
+      scrollTrigger:{trigger:".steps",start:"top 85%"}});
+
+    // contact block: headline grows in, buttons follow
+    gsap.from(".contact h2",{scale:.85,opacity:0,transformOrigin:"left bottom",duration:1.1,ease:"expo.out",
+      scrollTrigger:{trigger:".contact",start:"top 75%"}});
+    gsap.from(".contact p, .contact-links .btn, .phone",{y:24,opacity:0,duration:.7,stagger:.08,ease:"power3.out",
+      scrollTrigger:{trigger:".contact",start:"top 65%"}});
+  });
+
+  window.addEventListener("load",()=>ScrollTrigger.refresh());
 })();
 </script>
 </body>
